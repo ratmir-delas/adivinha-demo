@@ -7,6 +7,9 @@ $(document).ready(function() {
         $('#buttons').empty();
         for (let i = 1; i <= numberOfButtons; i++) {
             $('#buttons').append(`<button class="guessButton">${i}</button>`);
+            if (i % 6 === 0) {
+                $('#buttons').append('<br>');
+            }
         }
     }
 
